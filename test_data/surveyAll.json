@@ -1,0 +1,147 @@
+{
+  "items": [
+    {
+      "id": "formA",
+      "title": "Survey A"
+    },
+    {
+      "id": "formB",
+      "title": "Survey B"
+    },
+    {
+      "id": "formC",
+      "title": "Survey C"
+    },
+    {
+      "login": "authme",
+      "form": {
+        "integerRangeSteps": 3,
+        "integerRangeSteps2": 3,
+        "integerRangeSteps3": 3,
+        "comments": "asd",
+        "Organization": "asd"
+      },
+      "id": "B1YUnE5Yx"
+    },
+    {
+      "login": "authme",
+      "form": {
+        "integerRangeSteps": 3,
+        "integerRangeSteps2": 3,
+        "integerRangeSteps3": 3,
+        "comments": "asd",
+        "Organization": "asd",
+        "multipleChoicesList": [
+          "Instructor1"
+        ]
+      },
+      "id": "r1-R8HcFe"
+    },
+    {
+      "login": "authme",
+      "form": {
+        "integerRangeSteps": 3,
+        "integerRangeSteps2": 3,
+        "integerRangeSteps3": 3,
+        "comments": "sdf",
+        "Organization": "sdf"
+      },
+      "id": "HJB5hD9Yg"
+    },
+    {
+      "login": "authme",
+      "form": {
+        "integerRangeSteps": 3,
+        "integerRangeSteps2": 3,
+        "integerRangeSteps3": 3
+      },
+      "id": "Hyz1q-itl"
+    },
+    {
+      "login": "authme",
+      "form": {
+        "integerRangeSteps": 3,
+        "integerRangeSteps2": 3,
+        "integerRangeSteps3": 3
+      },
+      "id": "B1Zmc-jtl"
+    }
+  ],
+  "forms": {
+    "formA": {
+      "schema": {
+        "title": "Survey A",
+        "type": "object",
+        "properties": {
+          "integerRangeSteps": {
+            "title": "Survey Question 1",
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 5,
+            "multipleOf": 1,
+            "default": 3
+          },
+          "integerRangeSteps2": {
+            "title": "Survey Question 2",
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 5,
+            "multipleOf": 1,
+            "default": 3
+          },
+          "integerRangeSteps3": {
+            "title": "Survey Question 3",
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 5,
+            "multipleOf": 1,
+            "default": 3
+          },
+          "comments": {
+            "type": "string",
+            "title": "Comments"
+          },
+          "Organization": {
+            "type": "string",
+            "title": "Organization"
+          },
+          "multipleChoicesList": {
+            "type": "array",
+            "title": "Instructor",
+            "items": {
+              "type": "string",
+              "enum": [
+                "Instructor1",
+                "Instructor2"
+              ]
+            },
+            "uniqueItems": true
+          }
+        }
+      },
+      "uischema": {
+        "integerRangeSteps": {
+          "ui:widget": "range"
+        },
+        "integerRangeSteps2": {
+          "ui:widget": "range"
+        },
+        "integerRangeSteps3": {
+          "ui:widget": "range"
+        },
+        "integerRangeSteps4": {
+          "ui:widget": "range"
+        },
+        "integerRangeSteps5": {
+          "ui:widget": "range"
+        },
+        "comments": {
+          "ui:widget": "textarea"
+        },
+        "multipleChoicesList": {
+          "ui:widget": "checkboxes"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "items": [{
+    "id": "formA",
+    "title": "Survey A"
+  }, {
+    "id": "formB",
+    "title": "Survey B"
+  }, {
+    "id": "formC",
+    "title": "Survey C"
+  }]
+}

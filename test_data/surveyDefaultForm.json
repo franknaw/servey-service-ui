@@ -1,0 +1,44 @@
+{
+  "form": {
+    "formName": "Create New Survey",
+    "formId": "defaultForm",
+
+    "schema": {
+      "type": "object",
+      "properties": {
+        "formName": {
+          "type": "string",
+          "title": "Form Menu Name"
+        },
+        "title": {
+          "type": "string",
+          "title": "Form Title"
+        },
+        "questions": {
+          "type": "array",
+          "title": "Add Survey Question",
+          "items": {
+            "title": "Survey Question",
+            "type": "string"
+          }
+        },
+        "comments": {
+          "type": "string",
+          "title": "Comments label"
+        },
+        "organization": {
+          "type": "string",
+          "title": "Organization label"
+        },
+        "instructors": {
+          "type": "array",
+          "title": "Add Instructor",
+          "items": {
+            "title": "Instructor",
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

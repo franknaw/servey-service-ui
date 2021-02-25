@@ -1,0 +1,85 @@
+{
+  "form": {
+    "formName": "Survey Test",
+    "formId": "SurveyTest",
+    "schema": {
+      "title": "Survey Test",
+      "type": "object",
+      "properties": {
+        "question1": {
+          "title": "Survey Question Test 1",
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5,
+          "multipleOf": 1,
+          "default": 3
+        },
+        "question2": {
+          "title": "Survey Question Test 2",
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5,
+          "multipleOf": 1,
+          "default": 3
+        },
+        "question3": {
+          "title": "Survey Question Test 3",
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5,
+          "multipleOf": 1,
+          "default": 3
+        },
+        "question4": {
+          "title": "Survey Question Test 4",
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5,
+          "multipleOf": 1,
+          "default": 3
+        },
+        "comments": {
+          "type": "string",
+          "title": "Comments"
+        },
+        "organization": {
+          "type": "string",
+          "title": "Organization"
+        },
+        "instructors": {
+          "type": "array",
+          "title": "Instructor",
+          "items": {
+            "type": "string",
+            "enum": [
+              "Instructor 1",
+              "Instructor 2",
+              "Instructor 3"
+            ]
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "uischema": {
+      "question1": {
+        "ui:widget": "range"
+      },
+      "question2": {
+        "ui:widget": "range"
+      },
+      "question3": {
+        "ui:widget": "range"
+      },
+      "question4": {
+        "ui:widget": "range"
+      },
+      "comments": {
+        "ui:widget": "textarea"
+      },
+      "instructors": {
+        "ui:widget": "checkboxes"
+      }
+    }
+  }
+}
